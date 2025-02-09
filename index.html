@@ -15,7 +15,7 @@
       height: 100vh;
       background: linear-gradient(135deg, #ff7e5f, #feb47b);
       flex-direction: column;
-      overflow: hidden; /* Prevent body overflow */
+      overflow: hidden;
     }
 
     .card-header {
@@ -60,6 +60,7 @@
       cursor: pointer;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
+      margin-bottom: 20px; /* Added margin to create space between cards */
     }
 
     .card:hover {
@@ -114,11 +115,12 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding-top: 120px; /* Added padding to ensure space for the fixed header */
       }
 
       .card {
         width: 48%; /* Adjust width for two cards per row */
-        margin-bottom: 15px;
+        margin-bottom: 20px; /* Increased margin for space */
       }
 
       .card h3 {
