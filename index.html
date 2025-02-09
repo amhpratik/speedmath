@@ -34,7 +34,7 @@
 
     .card-container {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       gap: 20px;
       width: 80%;
       flex-wrap: wrap;
@@ -101,13 +101,13 @@
 
       /* Cards adjustment for 2 per row on smaller screens */
       .card-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-        gap: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
       }
 
       .card {
-        width: 100%; /* Full width of the card container cell */
+        width: 48%; /* Adjust width for two cards per row */
         margin-bottom: 15px;
       }
 
