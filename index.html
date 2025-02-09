@@ -15,7 +15,6 @@
       height: 100vh;
       background: linear-gradient(135deg, #ff7e5f, #feb47b);
       flex-direction: column;
-      overflow: hidden;
     }
 
     .card-header {
@@ -25,17 +24,12 @@
       width: 80%;
       text-align: center;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
       font-size: 36px;
       font-weight: bold;
       color: #ff5c8d;
       text-transform: uppercase;
       letter-spacing: 2px;
-      position: fixed;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 10;
-      margin-top: 30px;
     }
 
     .card-container {
@@ -45,10 +39,6 @@
       width: 80%;
       flex-wrap: wrap;
       align-items: center;
-      margin-top: 120px; /* Space to push content below header */
-      max-height: 80vh; /* Limit height of scrollable area */
-      overflow-y: auto;
-      padding: 10px 0;
     }
 
     .card {
@@ -60,7 +50,6 @@
       cursor: pointer;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
-      margin-bottom: 20px; /* Added margin to create space between cards */
     }
 
     .card:hover {
@@ -103,24 +92,13 @@
     }
 
     @media (max-width: 480px) {
-      /* Ensure header is visible on mobile */
       .card-header {
         font-size: 24px;
         padding: 15px;
-        width: 90%;
-      }
-
-      /* Cards adjustment for 2 per row on smaller screens */
-      .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding-top: 120px; /* Added padding to ensure space for the fixed header */
       }
 
       .card {
-        width: 48%; /* Adjust width for two cards per row */
-        margin-bottom: 20px; /* Increased margin for space */
+        width: 130px;
       }
 
       .card h3 {
