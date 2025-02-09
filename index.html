@@ -55,9 +55,9 @@
     .card:hover {
       transform: translateY(-10px);
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-      }
+    }
 
-      .card img {
+    .card img {
       max-width: 100px;
       height: auto;
       margin-bottom: 15px;
@@ -68,37 +68,38 @@
       color: #333;
       margin: 0;
     }
-    </style>
-  </head>
-  <body>
-    <!-- Card View for Title -->
-    <div class="card-header">
-      Math Practice
+
+  </style>
+</head>
+<body>
+
+  <!-- Card View for Title -->
+  <div class="card-header">
+    Math Practice
+  </div>
+
+  <!-- Cards for different math categories -->
+  <div class="card-container">
+    <div class="card" onclick="window.location.href='addition.html'">
+      <img src="addition.png" alt="Addition">
+      <h3>Addition</h3>
     </div>
 
-    <!-- Cards for different math categories -->
-    <div class="card-container">
-      <div class="card" onclick="window.location.href='addition.html'">
-        <img src="addition.png" alt="Addition">
-        <h3>Addition</h3>
-      </div>
+    <div class="card" onclick="window.location.href='subtraction.html'">
+      <img src="subtraction.png" alt="Subtraction">
+      <h3>Subtraction</h3>
+    </div>
 
-      <div class="card" onclick="window.location.href='subtraction.html'">
-        <img src="subtraction.png" alt="Subtraction">
-        <h3>Subtraction</h3>
-      </div>
+    <div class="card" onclick="window.location.href='multiplication.html'">
+      <img src="multiplication.png" alt="Multiplication">
+      <h3>Multiplication</h3>
+    </div>
 
-      <div class="card" onclick="window.location.href='multiplication.html'">
-        <img src="multiplication.png" alt="Multiplication">
-        <h3>Multiplication</h3>
-      </div>
+    <div class="card" onclick="window.location.href='division.html'">
+      <img src="division.png" alt="Division">
+      <h3>Division</h3>
+    </div>
+  </div>
 
-      <div class="card" onclick="window.location.href='division.html'">
-        <img src="division.png" alt="Division">
-        <h3>Division</h3>
-      </div>
-
-
-
-    </body>
-  </html>
+</body>
+</html>
