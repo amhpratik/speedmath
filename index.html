@@ -69,6 +69,42 @@
       margin: 0;
     }
 
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .card-container {
+        justify-content: center;
+        width: 90%;
+      }
+
+      .card {
+        width: 150px;
+        margin-bottom: 20px;
+      }
+
+      .card-header {
+        font-size: 28px;
+        padding: 20px;
+      }
+
+      .card h3 {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card-header {
+        font-size: 24px;
+        padding: 15px;
+      }
+
+      .card {
+        width: 130px;
+      }
+
+      .card h3 {
+        font-size: 18px;
+      }
+    }
   </style>
 </head>
 <body>
