@@ -295,58 +295,7 @@
     scoreElement.textContent = `Score: ${score}`;
   }
 
-  function generateQuestion() {
-    const difficulty = document.getElementById("difficulty").value;
-    let num1,
-    num2;
-
-    if (difficulty === "easy") {
-      const easyRange = [
-        [11,
-          15],
-        [21,
-          25],
-        [31,
-          35],
-        [41,
-          45]
-      ];
-      num1 = getRandomIntFromRanges(easyRange);
-      num2 = getRandomInt(11, 50);
-    } else if (difficulty === "medium") {
-      const mediumRange = [
-        [11,
-          15],
-        [16,
-          20],
-        [21,
-          25],
-        [26,
-          30],
-        [31,
-          35],
-        [36,
-          40],
-        [41,
-          45],
-        [46,
-          50]
-      ];
-      num1 = getRandomIntFromRanges(mediumRange);
-      num2 = getRandomInt(11, 99);
-    } else if (difficulty === "hard") {
-      num1 = getRandomIntWithoutZero(1, 99);
-      num2 = getRandomIntWithoutZero(1, 99);
-    }
-
-    currentQuestion.num1 = num1;
-    currentQuestion.num2 = num2;
-    currentAnswer = num1 - num2;
-
-    document.getElementById("question").textContent = `${num1} - ${num2}`;
-    answerInput.value = '';
-  }
-
+  
   function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
